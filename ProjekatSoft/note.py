@@ -1,7 +1,7 @@
 from __future__ import division
 
 class Note:
-    def __init__(self, pitch_name, relative_duration=0.25, tempo=120):
+    def __init__(self, pitch_name, relative_duration=0.25, tempo=480):
         self.pitch_name = pitch_name
         self.duration = (240/tempo) * relative_duration
         self.set_frequency()

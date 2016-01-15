@@ -24,6 +24,7 @@ def select_note_heads(image_orig, image_bin):
     region_positions = []
 
     for x, y, w, h in sorted_regions[0:, 1]:
+        print "wid: " + str(w) + "h: " + str(h)
         region_positions.append(y)
     return image_orig, sorted_regions[:, 0], region_positions
 
@@ -46,8 +47,12 @@ def get_note_positions(image):
     image_bin = img_fun.dilate(image_bin)
     image_bin = cv2.dilate(image_bin, kernel, iterations=1)
 
+    image_bin = cv2.dilate(image_bin, kernel, iterations=1)
+    image_bin = cv2.erode(image_bin, kernel, iterations=1)
+
+
     image_orig,selected_regions, positions = select_note_heads(image.copy(), image_bin)
 
-    cv2.imshow('asd', image_orig)
+    cv2.imshow('asd', image_bin)
 
     return positions

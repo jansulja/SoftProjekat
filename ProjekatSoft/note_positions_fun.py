@@ -28,6 +28,7 @@ def select_horizontal_lines(image_orig, image_bin):
     return image_orig, sorted_regions[:, 0], region_positions
 
 def generate_notes(lines, note_positions):
+    print "note_positions_len : " + str(len(note_positions))
     notes = []
     for note_y in note_positions:
         for i in range(0, len(lines)-1):
@@ -61,6 +62,7 @@ def get_note(i,note_y,line_y):
         else:
             return nt.Note('D5')
     '''
+    print i
     if i==0:
         if line_y-note_y < 5:
             return nt.Note('G3')
@@ -106,7 +108,7 @@ def get_note(i,note_y,line_y):
         if line_y-note_y < 5:
             return nt.Note('H5')
         else:
-            return nt.Note('C5')
+            return nt.Note('C6')
 
 
 def get_notes(image):
@@ -134,6 +136,7 @@ def get_notes(image):
 
     lines.insert(0,lines[0]+get_average_line_distance(lines))
     lines.insert(0,lines[0]+get_average_line_distance(lines))
+    lines.append(lines[len(lines)-1]-get_average_line_distance(lines))
     lines.append(lines[len(lines)-1]-get_average_line_distance(lines))
     lines.append(lines[len(lines)-1]-get_average_line_distance(lines))
 
