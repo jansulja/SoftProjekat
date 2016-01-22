@@ -32,8 +32,8 @@ def playNotes(notes):
          WAVEDATA = WAVEDATA+chr(int(math.sin(x/((BITRATE/frequency)/math.pi))*127+128))
 
         #fill remainder of frameset with silence
-        for x in xrange(RESTFRAMES):
-         WAVEDATA = WAVEDATA+chr(128)
+        #for x in xrange(RESTFRAMES):
+         #WAVEDATA = WAVEDATA+chr(128)
 
 
     stream.write(WAVEDATA)

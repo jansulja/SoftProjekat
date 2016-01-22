@@ -51,6 +51,7 @@ def get_note_positions(image):
     image_bin = cv2.erode(image_bin, kernel, iterations=1)
 
 
+
     image_orig,selected_regions, positions = select_note_heads(image.copy(), image_bin)
 
     cv2.imshow('asd', image_bin)
