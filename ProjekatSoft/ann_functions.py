@@ -9,7 +9,7 @@ def create_ann():
 
     ann = Sequential()
     ann.add(Dense(128, input_dim=784, activation='sigmoid'))
-    ann.add(Dense(9, activation='sigmoid'))
+    ann.add(Dense(14, activation='sigmoid'))
     return ann
 
 

@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import collections
+import note_head_position as nhp
 
 
 def resize_region(region):
@@ -12,25 +13,30 @@ def invert(image):
     return 255-image
 
 
-def select_roi(image_orig, image_bin):
+def select_roi(image_orig, image_bin, groups):
 
     img, contours, hierarchy = cv2.findContours(image_bin.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    dicts = [dict() for x in range(len(groups))]
 
     regions_dict = {}
     for contour in contours:
         x,y,w,h = cv2.boundingRect(contour)
 
         #if w>10 and w<20:
-        if w>13:
+        if w>10:
             print str(w) + ',' + str(h)
             region = image_bin[y:y+h+1,x:x+w+1];
+            row = nhp.find_row(groups,y)
+            dicts[row][x] = [resize_region(region),(x,y,w,h)]
+
             regions_dict[x] = [resize_region(region), (x,y,w,h)]
             cv2.rectangle(image_orig,(x,y),(x+w,y+h),(0,255,0),2)
 
-    sorted_regions_dict = collections.OrderedDict(sorted(regions_dict.items()))
-    sorted_regions = np.array(sorted_regions_dict.values())
+    # sorted_regions_dict = collections.OrderedDict(sorted(regions_dict.items()))
+    # sorted_regions = np.array(sorted_regions_dict.values())
 
-
+    sorted_regions = nhp.get_sorted_regions(dicts)
 
     region_positions = []
 

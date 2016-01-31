@@ -20,20 +20,26 @@ def playNotes(notes):
                     rate = BITRATE,
                     output = True)
     WAVEDATA = ''
+
+
+
     for i in range(len(notes)):
         lenth = notes[i].duration
         frequency = notes[i].frequency
+        note_name = str(notes[i].pitch_name)
 
         NUMBEROFFRAMES = int(BITRATE * lenth)
-        RESTFRAMES = NUMBEROFFRAMES % BITRATE
+        RESTFRAMES = int(BITRATE * lenth)
 
+        if note_name.startswith('rest'):
+            #fill remainder of frameset with silence
+            for x in xrange(RESTFRAMES):
+                WAVEDATA = WAVEDATA+chr(128)
 
-        for x in xrange(NUMBEROFFRAMES):
-         WAVEDATA = WAVEDATA+chr(int(math.sin(x/((BITRATE/frequency)/math.pi))*127+128))
+        else:
+            for x in xrange(NUMBEROFFRAMES):
+                WAVEDATA = WAVEDATA+chr(int(math.sin(x/((BITRATE/frequency)/math.pi))*127+128))
 
-        #fill remainder of frameset with silence
-        #for x in xrange(RESTFRAMES):
-         #WAVEDATA = WAVEDATA+chr(128)
 
 
     stream.write(WAVEDATA)

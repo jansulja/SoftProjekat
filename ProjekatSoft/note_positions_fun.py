@@ -30,11 +30,12 @@ def select_horizontal_lines(image_orig, image_bin):
 def generate_notes(lines, note_positions):
     print "note_positions_len : " + str(len(note_positions))
     notes = []
+    print lines
     for note_y in note_positions:
         for i in range(0, len(lines)-1):
             if note_y < lines[i] and note_y > lines[i+1]:
 
-                notes.append(get_note(i,note_y,lines[i]))
+                notes.append(get_note(i%9,note_y,lines[i]))
     return notes
 
 
@@ -128,17 +129,17 @@ def get_notes(image):
     image_bin = cv2.dilate(image_bin,horizontalStructure, iterations=1)
 
     image_orig, selected_regions, lines = select_horizontal_lines(image.copy(), image_bin)
-    positions = note_head_position.get_note_positions(image)
+
+    cv2.imshow('lines', image_orig)
+
+    lines,groups = add_additional_lines(lines)
+
+    positions = note_head_position.get_note_positions(image,groups)
 
 
 
-    print "avg_dis = " + str(get_average_line_distance(lines))
 
-    lines.insert(0,lines[0]+get_average_line_distance(lines))
-    lines.insert(0,lines[0]+get_average_line_distance(lines))
-    lines.append(lines[len(lines)-1]-get_average_line_distance(lines))
-    lines.append(lines[len(lines)-1]-get_average_line_distance(lines))
-    lines.append(lines[len(lines)-1]-get_average_line_distance(lines))
+
 
     print("lines " + str(lines))
 
@@ -154,7 +155,30 @@ def get_notes(image):
 def get_average_line_distance(lines):
 
     distances = []
-    for i in range(len(lines)-1):
+    for i in range(4):
         distances.append(lines[i]-lines[i+1])
 
-    return sum(distances)/(len(lines)-1)
+    return sum(distances)/4
+
+def add_additional_lines(lines):
+    groups = []
+    all_lines = []
+    g=[]
+    for i in range(len(lines)):
+        g.append(lines[i])
+        if len(g) == 5:
+            groups.append(g)
+            g =[]
+
+    for i in range(len(groups)):
+        groups[i].insert(0,groups[i][0]+get_average_line_distance(groups[i]))
+        groups[i].insert(0,groups[i][0]+get_average_line_distance(groups[i]))
+        groups[i].append(groups[i][len(groups[i])-1]-get_average_line_distance(groups[i]))
+        groups[i].append(groups[i][len(groups[i])-1]-get_average_line_distance(groups[i]))
+
+
+    for i in range(len(groups)):
+        for j in range(len(groups[i])):
+            all_lines.append(groups[i][j])
+
+    return all_lines,groups
