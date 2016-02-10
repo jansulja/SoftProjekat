@@ -2,34 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="294f941f-79f7-4448-9f1a-53c4c34b09ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/libfluidsynth64.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sound_fonts/JR_SynthString1.SF2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sound_fonts/JR_organ.sf2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sound_fonts/JR_sax.sf2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sound_fonts/JR_vibra.sf2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Regions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accidental.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/accidentals_elimination_fun.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bar.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/camera.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chord.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chord_head_positions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fluidsynth.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/note_head.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/play_notes_fsynth.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/player.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/region.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sheet.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/staff.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/symbol.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/a.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/aaaa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/acc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/beams_test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chords.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cords2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hard_test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/h1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/hells_bels.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/t.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/te.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hells_bells.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/herd2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jinglebells.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jinglebells_multiple_line.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/line_test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ml_test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/multiple_line_test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/note_test.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ode_to_joy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sheet0.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sheet3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/temp/1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/temp/2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/temp/4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test_rest.bmp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test_rest1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test_sharp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/Untitled.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/aaaaaa.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/chords1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/eefafsdasd.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/ieejwirf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/piano_ch_2_lines.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/piano_chords.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/sad.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/train_beams.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/train_chords.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/waed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train_accc.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train_accidentals.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train_rests_beams.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train_rets.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/trainwithrests.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/two_row.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/www.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ann_functions.py" afterPath="$PROJECT_DIR$/ann_functions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/imageProcessingFunctions.py" afterPath="$PROJECT_DIR$/imageProcessingFunctions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main_frame.py" afterPath="$PROJECT_DIR$/main_frame.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/note.py" afterPath="$PROJECT_DIR$/note.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/note_head_position.py" afterPath="$PROJECT_DIR$/note_head_position.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/note_positions_fun.py" afterPath="$PROJECT_DIR$/note_positions_fun.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/play_sheet.py" afterPath="$PROJECT_DIR$/play_sheet.py" />
     </list>
     <ignored path="ProjekatSoft.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,8 +99,8 @@
       <file leaf-file-name="main_frame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18952063">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.45945945">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -193,10 +213,10 @@
         <option value="$PROJECT_DIR$/chord.py" />
         <option value="$PROJECT_DIR$/note_positions_fun.py" />
         <option value="$PROJECT_DIR$/chord_head_positions.py" />
-        <option value="$PROJECT_DIR$/main_frame.py" />
         <option value="$PROJECT_DIR$/sheet.py" />
         <option value="$PROJECT_DIR$/player.py" />
         <option value="$PROJECT_DIR$/camera.py" />
+        <option value="$PROJECT_DIR$/main_frame.py" />
       </list>
     </option>
   </component>
@@ -253,6 +273,74 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="train" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="temp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ProjekatSoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="heads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,24 +605,36 @@
       <option name="project" value="LOCAL" />
       <updated>1454246208195</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Chords">
+      <created>1455127634806</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1455127634806</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Sound fonts">
+      <created>1455127775274</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1455127775274</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13965885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -558,7 +658,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Multiple lines, beams, rests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multiple lines, beams, rests" />
+    <MESSAGE value="Chords" />
+    <MESSAGE value="Sound fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sound fonts" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -920,8 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18952063">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.45945945">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding />
         </state>
       </provider>
