@@ -2,53 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="294f941f-79f7-4448-9f1a-53c4c34b09ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/a.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/aaaa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/acc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/beams_test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/chords.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/cords2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hard_test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/h1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/hells_bels.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/t.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/te.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/heads/test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/hells_bells.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/herd2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jinglebells.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/jinglebells_multiple_line.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/line_test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ml_test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/multiple_line_test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/note_test.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ode_to_joy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sheet0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/sheet3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/temp/1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/temp/2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/temp/4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test_rest.bmp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test_rest1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/test_sharp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/Untitled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/aaaaaa.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/chords1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/eefafsdasd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/ieejwirf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/piano_ch_2_lines.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/piano_chords.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/sad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/train_beams.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/train_chords.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train/waed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train_accc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train_accidentals.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train_rests_beams.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/train_rets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/trainwithrests.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/two_row.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/www.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ProjekatSoft.iws" />
@@ -99,8 +52,8 @@
       <file leaf-file-name="main_frame.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45945945">
-              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.43074325">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -323,24 +276,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="temp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjekatSoft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ProjekatSoft" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="heads" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -617,7 +552,13 @@
       <option name="project" value="LOCAL" />
       <updated>1455127775274</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Images">
+      <created>1455127835009</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1455127835009</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -660,7 +601,8 @@
     <MESSAGE value="Multiple lines, beams, rests" />
     <MESSAGE value="Chords" />
     <MESSAGE value="Sound fonts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sound fonts" />
+    <MESSAGE value="Images" />
+    <option name="LAST_COMMIT_MESSAGE" value="Images" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1022,8 +964,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_frame.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45945945">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.43074325">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
