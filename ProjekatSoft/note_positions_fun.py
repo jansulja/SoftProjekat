@@ -8,6 +8,7 @@ import collections
 import note_head_position
 import note as nt
 import soundGenerator as sgen
+import chord_head_positions as chp
 
 
 def select_horizontal_lines(image_orig, image_bin):
@@ -28,9 +29,9 @@ def select_horizontal_lines(image_orig, image_bin):
     return image_orig, sorted_regions[:, 0], region_positions
 
 def generate_notes(lines, note_positions):
-    print "note_positions_len : " + str(len(note_positions))
+
     notes = []
-    print lines
+
     for note_y in note_positions:
         for i in range(0, len(lines)-1):
             if note_y < lines[i] and note_y > lines[i+1]:
@@ -40,30 +41,7 @@ def generate_notes(lines, note_positions):
 
 
 def get_note(i,note_y,line_y):
-    '''
-    if i==0:
-        if line_y-note_y < 5:
-            return nt.Note('D4')
-        else:
-            return nt.Note('E4')
-    elif i==1:
 
-        if line_y-note_y < 5:
-            return nt.Note('F4')
-        else:
-            return nt.Note('G4')
-    elif i==2:
-        if line_y-note_y < 5:
-            return nt.Note('A4')
-        else:
-            return nt.Note('H4')
-    elif i==3:
-        if line_y-note_y < 5:
-            return nt.Note('C5')
-        else:
-            return nt.Note('D5')
-    '''
-    print i
     if i==0:
         if line_y-note_y < 5:
             return nt.Note('G3')
@@ -130,27 +108,16 @@ def get_notes(image):
 
     image_orig, selected_regions, lines = select_horizontal_lines(image.copy(), image_bin)
 
-    cv2.imshow('lines', image_orig)
+    #cv2.imshow('lines', image_orig)
 
     lines,groups = add_additional_lines(lines)
 
-    positions = note_head_position.get_note_positions(image,groups)
+    sheet = chp.get_note_positions(image,groups)
 
+    notes = []
+    #notes = generate_notes(lines, positions)
 
-
-
-
-
-    print("lines " + str(lines))
-
-
-    notes = generate_notes(lines, positions)
-
-
-    for i in range(len(notes)):
-        notes[i].print_note()
-
-    return notes
+    return sheet
 
 def get_average_line_distance(lines):
 

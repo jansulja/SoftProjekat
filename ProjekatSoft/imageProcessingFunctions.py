@@ -24,8 +24,10 @@ def select_roi(image_orig, image_bin, groups):
         x,y,w,h = cv2.boundingRect(contour)
 
         #if w>10 and w<20:
-        if w>10:
-            print str(w) + ',' + str(h)
+        if w>7:
+            if h>50:
+                h = 45
+
             region = image_bin[y:y+h+1,x:x+w+1];
             row = nhp.find_row(groups,y)
             dicts[row][x] = [resize_region(region),(x,y,w,h)]
@@ -40,11 +42,16 @@ def select_roi(image_orig, image_bin, groups):
 
     region_positions = []
 
+    reg_details = []
+
     for x, y, w, h in sorted_regions[1:-1, 1]:
         region_positions.append(y)
 
+    for x, y, w, h in sorted_regions[:, 1]:
+        reg_details.append((x,y,w,h))
 
-    return image_orig, sorted_regions[:, 0], region_positions
+
+    return image_orig, sorted_regions[:, 0], region_positions,reg_details
 
 def display_progress(data, centers, labels):
 

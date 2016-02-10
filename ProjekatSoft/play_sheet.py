@@ -3,9 +3,10 @@ import numpy as np
 import ann_functions as ann_fun
 import soundGenerator as sgen
 import play_notes
+import play_notes_fsynth
 import note as nt
 
-def play(ann,notes,inputs,outputs,alphabet):
+def play(ann,notes,inputs,outputs,alphabet,sound_font):
 
     results = ann.predict(np.array(inputs, np.float32))
     res = ann_fun.display_result(results,alphabet)
@@ -40,7 +41,8 @@ def play(ann,notes,inputs,outputs,alphabet):
         sgen.playNote(notes[i].frequency, notes[i].duration)
     '''
 
-    play_notes.playNotes(notes_with_rests)
+    #play_notes.playNotes(notes_with_rests)
+    play_notes_fsynth.play_notes(notes_with_rests,sound_font)
 
 def replace_beams(results):
         new_res = []

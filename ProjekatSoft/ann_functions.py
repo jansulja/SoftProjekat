@@ -5,11 +5,11 @@ import numpy as np
 import cv2
 
 
-def create_ann():
+def create_ann(output_dense):
 
     ann = Sequential()
     ann.add(Dense(128, input_dim=784, activation='sigmoid'))
-    ann.add(Dense(14, activation='sigmoid'))
+    ann.add(Dense(output_dense, activation='sigmoid'))
     return ann
 
 
