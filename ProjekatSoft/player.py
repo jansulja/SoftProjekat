@@ -36,17 +36,17 @@ class Player:
         fs.start()
         sfid = fs.sfload("sound_fonts/" + sound_font)
         fs.program_select(0, sfid, 0, 0)
-
+        print "all chords -------------------------------------------------------"
         for chord in chords:
-
+            chord.print_chord()
             for note in chord.notes:
                 midinum = note.midinum
-                velocity = 30
+                velocity = 50
                 fs.noteon(0, midinum, velocity)
             time.sleep(chord.duration)
             for note in chord.notes:
                 lenth = note.duration
                 midinum = note.midinum
-                velocity = 30
+                velocity = 50
                 fs.noteoff(0, midinum)
             time.sleep(chord.duration)

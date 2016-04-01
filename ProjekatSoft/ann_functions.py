@@ -54,5 +54,16 @@ def display_result(outputs, alphabet):
 
     result = []
     for output in outputs:
-        result.append(alphabet[winner(output)])
+
+        if(alphabet[winner(output)] == 'beam-8'):
+            print 'winer= ' ,max(enumerate(output), key=lambda x: x[1])[0]
+            if output[max(enumerate(output), key=lambda x: x[1])[0]] < 0.5 and output[4] > 0.1:
+                print 'winer= ' ,output[winner([output])]
+                result.append('4')
+
+            else:
+                result.append('beam-8')
+        else:
+
+            result.append(alphabet[winner(output)])
     return result

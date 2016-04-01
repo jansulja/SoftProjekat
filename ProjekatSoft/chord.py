@@ -1,22 +1,26 @@
+from __future__ import division
 import note as nt
+import main_frame as mf
 
 class Chord:
 
     def __init__(self,regions,lines,acc_state):
+        self.tempo = 240
         self.acc_state = acc_state
         self.regions = regions
         self.lines = lines
         self.notes = []
-        self.duration = 0
+        self.duration = (240/self.tempo) * (1/4)
 
         self.generate_notes()
         self.print_chord()
 
     def set_duration(self,relative_duration):
-        self.duration = (240/300) * relative_duration
+        print 'chord dur ', relative_duration
+        self.duration = (240/self.tempo) * relative_duration
 
     def print_chord(self):
-        print 'chord'
+        print 'chord  <--> ' + str(self.duration)
         for note in self.notes:
             print note.pitch_name
 
@@ -42,7 +46,15 @@ class Chord:
 
 
     def get_note(self,i,note_y,line_y):
-        constant = 8
+
+        #print 'i: ' , i ,' note y: ',note_y, 'line_y : ' ,line_y
+
+        if mf.Application.from_notebook == 0:
+            #print '@@@'
+            constant = 8
+        else:
+            constant = 8
+
         if i==0:
             if line_y-note_y < constant:
                 if self.acc_state['A3'] == 1:
@@ -132,6 +144,8 @@ class Chord:
                     return nt.Note('C6')
                 else:
                     return nt.Note('H5')
+        else:
+            print 'note does not match'
         # elif i==8:
         #     if line_y-note_y < 5:
         #         return nt.Note('C6')

@@ -17,7 +17,7 @@ class Note:
 
 
     def set_duration(self,relative_duration):
-        self.duration = (240/300) * relative_duration
+        self.duration = (240/60) * relative_duration
 
     def set_frequency(self):
 

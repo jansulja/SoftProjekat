@@ -27,9 +27,9 @@ class Accidental:
 
     def set_pitch(self):
         for i in range(len(self.added_lines)):
-            #print 'line:  ' + str(self.added_lines[i]) + ' y1 = ' + str(self.y1) + ' y2 = ' + str(self.y2)
-            if self.added_lines[i] > self.y2 and self.added_lines[i]<self.y1:
-                #print 'setting pitch for : ' +str(i)
+            print 'line:  ' + str(self.added_lines[i]) + ' y1 = ' + str(self.y1) + ' y2 = ' + str(self.y2)
+            if (self.added_lines[i] > self.y2 and self.added_lines[i]<self.y1) or (self.added_lines[i]<self.y2 and self.added_lines[i]>self.y1):
+                print 'setting pitch for : ' +str(i)
                 self.pitch = self.get_pitch_name(i)
 
 

@@ -19,13 +19,14 @@ def select_roi(image_orig, image_bin, groups):
 
     dicts = [dict() for x in range(len(groups))]
 
+
     regions_dict = {}
     for contour in contours:
         x,y,w,h = cv2.boundingRect(contour)
 
         #if w>10 and w<20:
         if w>7:
-            if h>50:
+            if h>50 and w<40:
                 h = 45
 
             region = image_bin[y:y+h+1,x:x+w+1];
@@ -74,6 +75,7 @@ def image_gray(image):
 
 def image_bin(image_gs):
     ret,image_bin = cv2.threshold(image_gs, 127, 255, cv2.THRESH_BINARY)
+    # ret,image_bin = cv2.threshold(image_gs, 110, 255, cv2.THRESH_BINARY)
     return image_bin
 
 
@@ -96,4 +98,14 @@ def dilate(image):
 def erode(image):
     kernel = np.ones((3,3)) # strukturni element 3x3 blok
     return cv2.erode(image, kernel, iterations=1)
+
+def show_image(name,image):
+
+
+    # perform the actual resizing of the image and show it
+    height, width = image.shape[:2]
+    resized = cv2.resize(image, (int(0.5*width),int(0.5*height)), interpolation = cv2.INTER_AREA)
+
+    cv2.destroyAllWindows()
+    cv2.imshow(name,resized)
 

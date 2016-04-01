@@ -26,6 +26,7 @@ def select_horizontal_lines(image_orig, image_bin):
     sorted_regions_dict = collections.OrderedDict(sorted(regions_dict.items()))
     sorted_regions = np.array(sorted_regions_dict.values())
 
+
     return image_orig, sorted_regions[:, 0], region_positions
 
 def generate_notes(lines, note_positions):

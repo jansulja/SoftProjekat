@@ -72,7 +72,7 @@ class Bar:
             print chord.print_chord()
         print 'Accidentals'
         for ac in self.accs:
-            print ac.x1
+            print 'y1= ',ac.y1,'y2= ',ac.y2
             print ac.pitch
 
     def generate_chords(self):
@@ -83,10 +83,11 @@ class Bar:
         for symbol in self.all_symbols:
 
             if isinstance(symbol,acc.Accidental):
-                if self.acc_state[symbol.pitch] == 0:
-                    self.acc_state[symbol.pitch] = 1
-                else:
-                    self.acc_state[symbol.pitch] = 0
+                if(not str(symbol.pitch).startswith('No')):
+                    if self.acc_state[symbol.pitch] == 0:
+                        self.acc_state[symbol.pitch] = 1
+                    else:
+                        self.acc_state[symbol.pitch] = 0
 
             else:
                 self.chords.append(ch.Chord(symbol,self.lines,self.acc_state))
